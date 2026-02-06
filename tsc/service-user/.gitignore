@@ -1,0 +1,10 @@
+.vscode/
+.DS_Store
+
+node_modules/
+build/
+dist/
+temp/
+package-lock.json
+src/swagger/swagger.json
+swagger.json

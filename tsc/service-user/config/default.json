@@ -1,0 +1,40 @@
+{
+	"app": {
+		"name": "Service Users",
+		"description": "Purpose of this service is to provide authorization, roles, user activity and etc",
+		"version": "1.0.0",
+		"env": "Development"
+	},
+	"server": {
+		"port": "4001",
+		"host": "0.0.0.0",
+		"host_swagger": "http://127.0.0.1:4001",
+		"max_body": "50mb",
+		"max_upload": 104857600,
+		"morgan": "combined",
+		"cors": "*",
+		"ssl": {
+			"enable": false,
+			"cert": "",
+			"key": ""
+		}
+	},
+	"database": {
+		"engine": "postgres",
+		"host": "127.0.0.1",
+		"port": "5432",
+		"username": "postgres",
+		"password": "123",
+		"database": "bri_erp",
+		"logging": true
+	},
+	"auth": {
+		"refresh_token_lifetime_day": 30,
+		"access_token_lifetime": 86400,
+		"reset_password_url": "https://bri-dev.shiblysolution.id/auth/reset-password/"
+	},
+	"service": {
+		"notification": "http://127.0.0.1:4008/",
+		"hrms": "https://brilianapps.shiblysolution.id/hrms/"
+	}
+}

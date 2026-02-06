@@ -1,0 +1,40 @@
+{
+	"app": {
+		"name": "Service User",
+		"description": "Purpose of this service is to provide authorization, roles, user activity and etc",
+		"version": "1.0.0",
+		"env": "Staging"
+	},
+	"server": {
+		"port": "4001",
+		"host": "0.0.0.0",
+		"host_swagger": "https://brilianapps.shiblysolution.id/test/u/",
+		"max_body": "50mb",
+		"max_upload": 104857600,
+		"morgan": "combined",
+		"cors": "*",
+		"ssl": {
+			"enable": false,
+			"cert": "",
+			"key": ""
+		}
+	},
+	"database": {
+		"engine": "postgres",
+		"host": "172.16.11.202",
+		"port": "5432",
+		"username": "bri_staging",
+		"password": "fK*#o>1W2&6f",
+		"database": "bri_erp_staging",
+		"logging": true
+	},
+	"auth": {
+		"refresh_token_lifetime_day": 1,
+		"access_token_lifetime": 86400,
+		"reset_password_url": "https://brilianapps.shiblysolution.id/ukln/auth/reset-password/"
+	},
+	"service": {
+		"notification": "http://127.0.0.1:4008/",
+		"hrms": "http://127.0.0.1:80/"
+	}
+}

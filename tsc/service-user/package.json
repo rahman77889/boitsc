@@ -1,0 +1,55 @@
+{
+    "name": "service-user",
+    "version": "1.0.0",
+    "description": "Purpose of this service is to provide authorization, roles, user activity and etc",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "nodemon",
+        "build": "tsc",
+        "swagger": "node src/swagger/builder.js"
+    },
+    "keywords": [
+        "BRI"
+    ],
+    "author": "STS",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.8",
+        "bcryptjs": "^2.4.3",
+        "compression": "^1.7.5",
+        "config": "^3.3.12",
+        "cors": "^2.8.5",
+        "dayjs": "^1.11.13",
+        "entity": "file:../entity",
+        "exceljs": "^4.4.0",
+        "express": "^4.21.1",
+        "express-jwt": "^8.4.1",
+        "fast-csv": "^5.0.2",
+        "helmet": "^8.0.0",
+        "i": "^0.3.7",
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.2",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.9.16",
+        "npm": "^10.9.1",
+        "pg": "^8.13.1",
+        "pg-query-stream": "^4.7.1",
+        "reflect-metadata": "^0.2.2",
+        "swagger-autogen": "^2.23.7",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1",
+        "tslog": "^4.9.3",
+        "typeorm": "^0.3.20",
+        "ua-parser-js": "^2.0.0",
+        "uuid": "^11.0.3"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.6",
+        "@types/compression": "^1.7.5",
+        "@types/config": "^3.3.5",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/morgan": "^1.9.9",
+        "@types/swagger-ui-express": "^4.1.7"
+    }
+}
